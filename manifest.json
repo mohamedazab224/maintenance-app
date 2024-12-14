@@ -1,0 +1,190 @@
+{
+  "name": "Al-Azab Maintenance App",
+  "short_name": "Al-Azab",
+  "icons": [
+    {
+      "src": "/1.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/2.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/2.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/3.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/3.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/4.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/4.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/5.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/5.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/6.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/7.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/az-android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/az-android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/az-apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/az-black.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/az-coler.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/az-favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/az-favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/az-favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/az-whiet.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/az.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/logo300-800px.png",
+      "sizes": "800x800",
+      "type": "image/png"
+    },
+    {
+      "src": "/logobl-ar.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/logobl300-800px.png",
+      "sizes": "800x800",
+      "type": "image/png"
+    },
+    {
+      "src": "/logoblss300-800px.png",
+      "sizes": "800x800",
+      "type": "image/png"
+    },
+    {
+      "src": "/logoco-en.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/logowh-ar.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/logowh-en.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/logowh60-200px.png",
+      "sizes": "200x200",
+      "type": "image/png"
+    },
+    {
+      "src": "/logowhss300-800px.png",
+      "sizes": "800x800",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/index.html"
+}
