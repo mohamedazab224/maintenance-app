@@ -19,3 +19,16 @@ contactForm.addEventListener("submit", (event) => {
         alert("Please fill in all fields.");
     }
 });
+// تسجيل الـ Service Worker
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+        navigator.serviceWorker.register("/service-worker.js").then(
+            (registration) => {
+                console.log("Service Worker registered:", registration);
+            },
+            (err) => {
+                console.log("Service Worker registration failed:", err);
+            }
+        );
+    });
+}
