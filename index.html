@@ -1,133 +1,1355 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="description" content="Welcome to Alazzab Store - Your destination for top-quality products.">
-    <title>Alazzab Store</title>
-    
-    <!-- ربط ملف CSS -->
-    <link rel="stylesheet" href="styles/styles.css">
-    
-    <!-- ربط ملف JavaScript -->
-    <script src="scripts/main.js" defer></script>
-    
-    <!-- ربط ملف manifest -->
-    <link rel="manifest" href="/manifest.json">
 
-    <!-- ربط أيقونة الموقع -->
-    <link rel="icon" href="assets/logos/favicon.ico" type="image/x-icon">
+	<!-- Meta Tags -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<meta charset="UTF-8">
+
+	
+	<meta name="description" content=""><meta name="keywords" content=""><title>Acon - Building and Architecture Website CMS</title>
+	<link href="https://fonts.googleapis.com/css?family=Francois+One|Lato:400,700" rel="stylesheet">
+
+	<link rel="icon" href="https://demo.phpscriptpoint.com/acon/public/uploads/favicon.png" type="image/png">
+
+	<link rel='stylesheet' href='https://demo.phpscriptpoint.com/acon/public/css/animate.min.css'>
+	<link rel='stylesheet' href='https://demo.phpscriptpoint.com/acon/public/css/bootstrap.min.css'>
+	<link rel='stylesheet' href='https://demo.phpscriptpoint.com/acon/public/css/datepicker3.css'>
+	<link rel='stylesheet' href='https://demo.phpscriptpoint.com/acon/public/css/font-awesome.min.css'>
+	<link rel='stylesheet' href='https://demo.phpscriptpoint.com/acon/public/css/lightbox.min.css'>
+	<link rel='stylesheet' href='https://demo.phpscriptpoint.com/acon/public/css/owl.carousel.min.css'>
+	<link rel='stylesheet' href='https://demo.phpscriptpoint.com/acon/public/css/hover-min.css'>
+	<link rel='stylesheet' href='https://demo.phpscriptpoint.com/acon/public/css/meanmenu.css'>
+	<link rel='stylesheet' href='https://demo.phpscriptpoint.com/acon/public/css/spacing.css'>
+	<link rel='stylesheet' href='https://demo.phpscriptpoint.com/acon/public/css/style.css'>
+	<link rel='stylesheet' href='https://demo.phpscriptpoint.com/acon/public/css/responsive.css'>
+	<link rel='stylesheet' href='https://demo.phpscriptpoint.com/acon/public/style.css'>
+
+
+	<style>
+		
+		/* Theme Color 1 */
+		.header-area,
+		.slider-animated li a,
+		.services-text,
+		.team-text,
+		.faq-gallery .panel-default > .panel-heading,
+		.recent-text,
+		.caption-text,
+		.blog-text,
+		.footer-main,
+		.mission-icon,
+		.testimonial-area.main-testimonial .testimonial-detail,
+		.main-testimonial .testimonial-carousel .owl-dots .owl-dot,
+		.contact-area button {
+			background: #13233B!important;
+		}
+		.bg-choose {
+			background-color: #13233B!important;	
+		}
+		ul.nav-menu li a,
+		.team-carousel.owl-carousel .owl-nav .owl-prev, 
+		.team-carousel.owl-carousel .owl-nav .owl-next,
+		.blog-carousel.owl-carousel .owl-nav .owl-prev, 
+		.blog-carousel.owl-carousel .owl-nav .owl-next,
+		.brand-carousel.owl-carousel .owl-nav .owl-prev, 
+		.brand-carousel.owl-carousel .owl-nav .owl-next {
+			color: #13233B!important;
+		}
+		.slider-animated li a,
+		.team-carousel.owl-carousel .owl-nav .owl-prev, 
+		.team-carousel.owl-carousel .owl-nav .owl-next,
+		.blog-carousel.owl-carousel .owl-nav .owl-prev, 
+		.blog-carousel.owl-carousel .owl-nav .owl-next,
+		.brand-carousel.owl-carousel .owl-nav .owl-prev, 
+		.brand-carousel.owl-carousel .owl-nav .owl-next {
+			border-color: #13233B!important;	
+		}
+
+
+		/* Theme Color 2 */
+		ul.nav-menu li ul li a:before,
+		.slider-animated li:last-child a,
+		.client-name,
+		.testimonial-carousel .owl-dots .owl-dot.active,
+		.team-social li a:hover,
+		.faq-gallery .panel-group .panel-heading a:after,
+		.caption-bg,
+		.lightbox-bg,
+		.hvr-bounce-to-right::before,
+		.blog-author li.gro,
+		.footer-contact-area,
+		.sidebar-item h3:before,
+		.searchbar-item button.btn:hover,
+		.single-blog-author li.gro,
+		.scroll-top,
+		.contact-area button:hover {
+			background: #F8BE2E!important;
+		}
+		.services-link a {
+			background-color: #F8BE2E!important;	
+		}
+		ul.nav-menu li a:hover,
+		.header-social a:hover,
+		.slide-carousel.owl-carousel .owl-nav .owl-prev:hover, 
+		.slide-carousel.owl-carousel .owl-nav .owl-next:hover,
+		.choose-text h3,
+		.services-text h3 a,
+		.lightbox-icon a:hover,
+		.team-carousel.owl-carousel .owl-nav .owl-prev:hover, 
+		.team-carousel.owl-carousel .owl-nav .owl-next:hover,
+		.faq-gallery h4.panel-title a:hover,
+		.caption-icon a:hover,
+		.blog-carousel.owl-carousel .owl-nav .owl-prev:hover, 
+		.blog-carousel.owl-carousel .owl-nav .owl-next:hover,
+		.blog-text h3 a,
+		.brand-carousel.owl-carousel .owl-nav .owl-prev:hover, 
+		.brand-carousel.owl-carousel .owl-nav .owl-next:hover,
+		.mission-icon,
+		.sidebar-item li a:hover,
+		.carousel-inner .lightbox-inner a {
+			color: #F8BE2E!important;
+		}
+		.slide-carousel.owl-carousel .owl-nav .owl-prev:hover, 
+		.slide-carousel.owl-carousel .owl-nav .owl-next:hover,
+		.slider-animated li:last-child a,
+		.choose-icon img,
+		.team-carousel.owl-carousel .owl-nav .owl-prev:hover, 
+		.team-carousel.owl-carousel .owl-nav .owl-next:hover,
+		.team-text,
+		.testimonial-carousel .owl-dots .owl-dot.active,
+		.team-social li a:hover,
+		.blog-carousel.owl-carousel .owl-nav .owl-prev:hover, 
+		.blog-carousel.owl-carousel .owl-nav .owl-next:hover,
+		.brand-carousel.owl-carousel .owl-nav .owl-prev:hover, 
+		.brand-carousel.owl-carousel .owl-nav .owl-next:hover,
+		.carousel-indicators li,
+		.form-control:focus,
+		.contact-area button:hover {
+			border-color: #F8BE2E!important;
+		}
+		ul.nav-menu li ul,
+		.services-text,
+		.recent-text,
+		.caption-text,
+		.blog-text {
+			border-top-color: #F8BE2E!important;
+		}
+		.single-service-photo img {
+			border-bottom-color: #F8BE2E!important;
+		}
+
+
+
+		.slider-animated li a:hover {
+			background: #333!important;
+			border-color: #333!important;
+		}
+
+		.slider-animated li:last-child a:hover {
+			background: #333!important;
+			border-color: #333!important;
+			color: #fff!important;
+		}
+		
+	</style>
+
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <h1>Alazzab Store</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#daftra-store">Daftra Store</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <main>
-        <section id="home">
-            <div class="hero">
-                <h2>Welcome to Alazzab Store</h2>
-                <p>Discover top-quality products at unbeatable prices.</p>
-                <div class="featured-products">
-                    <h3>Featured Products</h3>
-                    <div class="product-list">
-                        <div class="product">
-                            <img src="assets/images/featured1.jpg" alt="Featured Product 1">
-                            <h3>Featured Product 1</h3>
-                            <p>$120</p>
-                            <button class="btn">Add to Cart</button>
-                        </div>
-                        <div class="product">
-                            <img src="assets/images/featured2.jpg" alt="Featured Product 2">
-                            <h3>Featured Product 2</h3>
-                            <p>$95</p>
-                            <button class="btn">Add to Cart</button>
-                        </div>
-                        <div class="product">
-                            <img src="assets/images/featured3.jpg" alt="Featured Product 3">
-                            <h3>Featured Product 3</h3>
-                            <p>$150</p>
-                            <button class="btn">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-                <a href="#products" class="btn">Shop All Products</a>
-            </div>
-        </section>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=323620764400430";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	
+	<div class="header-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-sm-8">
+					<div class="header-contact">
+						<ul>
+							<li>
+								<i class="fa fa-envelope-o" aria-hidden="true"></i>
+								<span>info@yourdomain.com</span>
+							</li>
+							<li>
+								<i class="fa fa-phone" aria-hidden="true"></i>
+								<span>123-456-7878</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<div class="header-social">
+						<ul>
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li><li><a href="#"><i class="fa fa-twitter"></i></a></li><li><a href="#"><i class="fa fa-linkedin"></i></a></li><li><a href="#"><i class="fa fa-google-plus"></i></a></li><li><a href="#"><i class="fa fa-pinterest"></i></a></li>						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-        <section id="products" class="products">
-            <h2>Our Products</h2>
-            <div class="product-list">
-                <div class="product">
-                    <img src="assets/images/product1.jpg" alt="Product 1">
-                    <h3>Product 1</h3>
-                    <p>$50</p>
-                    <button class="btn">Add to Cart</button>
-                </div>
-                <div class="product">
-                    <img src="assets/images/product2.jpg" alt="Product 2">
-                    <h3>Product 2</h3>
-                    <p>$75</p>
-                    <button class="btn">Add to Cart</button>
-                </div>
-                <div class="product">
-                    <img src="assets/images/product3.jpg" alt="Product 3">
-                    <h3>Product 3</h3>
-                    <p>$100</p>
-                    <button class="btn">Add to Cart</button>
-                </div>
-            </div>
-        </section>
+	<div id="strickymenu" class="menu-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-12">
+					<div class="logo">
+						<a href="https://demo.phpscriptpoint.com/acon/"><img src="https://demo.phpscriptpoint.com/acon/public/uploads/logo.png" alt="Logo"></a>
+					</div>
+				</div>
+				<div class="col-md-9 col-sm-12 main-menu" style="display: block;">
+					<div class="main-menu-item">				 	
+				 		<ul class="nav-menu">
+														
+														<li><a href="https://demo.phpscriptpoint.com/acon/">Home</a></li>
+							
+														<li class="menu-item-has-children"><a href="javascript:void();">Page</a>
+								<ul class="sub-menu">
 
-        <section id="daftra-store">
-            <h2>Alazzab Store on Daftra</h2>
-            <iframe src="https://alazab-co.daftra.com/store" width="100%" height="800" style="border:none;"></iframe>
-        </section>
+																		<li><a href="https://demo.phpscriptpoint.com/acon/about">About</a></li>
+									
+																		<li><a href="https://demo.phpscriptpoint.com/acon/gallery">Gallery</a></li>
+									
+																		<li><a href="https://demo.phpscriptpoint.com/acon/faq">FAQ</a></li>
+																	</ul>
+							</li>
+							
+														<li><a href="https://demo.phpscriptpoint.com/acon/service">Service</a></li>
+							
+														<li><a href="https://demo.phpscriptpoint.com/acon/portfolio">Portfolio</a></li>
+							
+														<li><a href="https://demo.phpscriptpoint.com/acon/testimonial">Testimonial</a></li>
+							
+														<li><a href="https://demo.phpscriptpoint.com/acon/news/page">News</a></li>
+							
+														<li><a href="https://demo.phpscriptpoint.com/acon/contact">Contact</a></li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<div class="slider">
+	<div class="slide-carousel owl-carousel">		
+					<div class="slider-item" style="background-image:url(https://demo.phpscriptpoint.com/acon/public/uploads/slider-1.jpg);">
+				<div class="bg"></div>
+				<div class="slider-table">
+					<div class="slider-text">
+						<div class="slider-animated">
+							<h2>HELPING BUILD A BETTER FUTURE</h2>
+						</div>
+						<div class="slider-animated">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt libero voluptate, veritatis esse dolorem soluta.							</p>
+						</div>
+						<div class="slider-animated">
+							<ul>
+								<li><a href="#">Read More</a></li>
+								<li><a href="#">About Us</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+						<div class="slider-item" style="background-image:url(https://demo.phpscriptpoint.com/acon/public/uploads/slider-2.jpg);">
+				<div class="bg"></div>
+				<div class="slider-table">
+					<div class="slider-text">
+						<div class="slider-animated">
+							<h2>BUILD WITH CONFIDENCE</h2>
+						</div>
+						<div class="slider-animated">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt libero voluptate, veritatis esse dolorem soluta.							</p>
+						</div>
+						<div class="slider-animated">
+							<ul>
+								<li><a href="#">Read More</a></li>
+								<li><a href="#">About Us</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+				</div>
+</div>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <button type="submit" class="btn">Send</button>
-            </form>
-        </section>
-    </main>
 
-<footer>
-    <div class="container">
-        <p>&copy; 2024 Alazzab Store. All rights reserved.</p>
-    </div>
-</footer>
+<div class="choose-area pt-60">
+	<div class="headline">
+		<div class="headline-shadow">
+<h2>WHY CHOOSE US</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit Deserunt libero voluptate</p>
+</div>
+</div>
+<div class="container-fluid">
+	<div class="row choose-item-row">
+		<div class="col-md-6 choose-left" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/why-choose-main-photo.jpg);">
+		</div>
+		<div class="col-md-6 choose-right" style="background-color: black;">
+			<div class="bg-choose"></div>
+			<div class="choose-item">
+				<ul>
+					<li>
+						<div class="choose-icon">
+							<img src="https://demo.phpscriptpoint.com/acon/public/uploads/why-choose-1.png" alt="Why Choose Photo">
+						</div>
+						<div class="choose-text">
+							<h3>Brute altera causae ne sed cum no</h3>
+							<p>Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis.Sea ocurreret principes ne.</p>
+						</div>
+					</li>
+					<li>
+						<div class="choose-icon">
+							<img src="https://demo.phpscriptpoint.com/acon/public/uploads/why-choose-2.png" alt="Why Choose Photo">
+						</div>
+						<div class="choose-text">
+							<h3>Liber utroque vim an, ne his brute</h3>
+							<p>Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis.Sea ocurreret principes ne.</p>
+						</div>
+					</li>
+					<li>
+						<div class="choose-icon">
+							<img src="https://demo.phpscriptpoint.com/acon/public/uploads/why-choose-3.png" alt="Why Choose Photo">
+						</div>
+						<div class="choose-text">
+							<h3>Vix tale noluisse voluptua ad ne</h3>
+							<p>Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis.Sea ocurreret principes ne.</p>
+						</div>
+					</li>
+					<li>
+						<div class="choose-icon">
+							<img src="https://demo.phpscriptpoint.com/acon/public/uploads/why-choose-4.png" alt="Why Choose Photo">
+						</div>
+						<div class="choose-text">
+							<h3>Mei ut errem legimus, periculis eos</h3>
+							<p>Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis.Sea ocurreret principes ne.</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
 
-<!-- مكتبة EmailJS -->
-<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+														<li>
+								<div class="choose-icon">
+									<img src="https://demo.phpscriptpoint.com/acon/public/uploads/why-choose-2.png" alt="Why Choose Photo">
+								</div>
+								<div class="choose-text">
+									<h3>Liber utroque vim an, ne his brute</h3>
+									<p>Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis.Sea ocurreret principes ne.</p>
+								</div>
+							</li>
+														<li>
+								<div class="choose-icon">
+									<img src="https://demo.phpscriptpoint.com/acon/public/uploads/why-choose-3.png" alt="Why Choose Photo">
+								</div>
+								<div class="choose-text">
+									<h3>Vix tale noluisse voluptua ad ne</h3>
+									<p>Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis.Sea ocurreret principes ne.</p>
+								</div>
+							</li>
+														<li>
+								<div class="choose-icon">
+									<img src="https://demo.phpscriptpoint.com/acon/public/uploads/why-choose-4.png" alt="Why Choose Photo">
+								</div>
+								<div class="choose-text">
+									<h3>Mei ut errem legimus, periculis eos</h3>
+									<p>Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis.Sea ocurreret principes ne.</p>
+								</div>
+							</li>
+												</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="services-area ptb-60">
+	<div class="container">
+		<div class="row">
+			<div class="headline">
+				<div class="headline-shadow">
+					<h2>SERVICES</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit Deserunt libero voluptate</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">			
+							<div class="col-md-4 col-sm-6 col-xs-12 clear-three">
+					<div class="services-item">
+						<div class="services-photo" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/service-1.jpg)"></div>
+						<div class="services-text">
+							<h3><a href="https://demo.phpscriptpoint.com/acon/service/view/1">ENGINEERING & DESIGN</a></h3>
+							Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens							<div class="services-link">
+								<a href="https://demo.phpscriptpoint.com/acon/service/view/1">Read More <i class="fa fa-angle-double-right"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+								<div class="col-md-4 col-sm-6 col-xs-12 clear-three">
+					<div class="services-item">
+						<div class="services-photo" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/service-2.jpg)"></div>
+						<div class="services-text">
+							<h3><a href="https://demo.phpscriptpoint.com/acon/service/view/2">INDUSTRY TRAINING</a></h3>
+							Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens 							<div class="services-link">
+								<a href="https://demo.phpscriptpoint.com/acon/service/view/2">Read More <i class="fa fa-angle-double-right"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+								<div class="col-md-4 col-sm-6 col-xs-12 clear-three">
+					<div class="services-item">
+						<div class="services-photo" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/service-3.jpg)"></div>
+						<div class="services-text">
+							<h3><a href="https://demo.phpscriptpoint.com/acon/service/view/3">PROGRAM MANAGEMENT</a></h3>
+							Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens 							<div class="services-link">
+								<a href="https://demo.phpscriptpoint.com/acon/service/view/3">Read More <i class="fa fa-angle-double-right"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+								<div class="col-md-4 col-sm-6 col-xs-12 clear-three">
+					<div class="services-item">
+						<div class="services-photo" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/service-4.jpg)"></div>
+						<div class="services-text">
+							<h3><a href="https://demo.phpscriptpoint.com/acon/service/view/4">ANALYTICS & RESEARCH</a></h3>
+							Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens 							<div class="services-link">
+								<a href="https://demo.phpscriptpoint.com/acon/service/view/4">Read More <i class="fa fa-angle-double-right"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+								<div class="col-md-4 col-sm-6 col-xs-12 clear-three">
+					<div class="services-item">
+						<div class="services-photo" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/service-5.jpg)"></div>
+						<div class="services-text">
+							<h3><a href="https://demo.phpscriptpoint.com/acon/service/view/5">DIGITAL ENTERPRISE</a></h3>
+							Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens 							<div class="services-link">
+								<a href="https://demo.phpscriptpoint.com/acon/service/view/5">Read More <i class="fa fa-angle-double-right"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+								<div class="col-md-4 col-sm-6 col-xs-12 clear-three">
+					<div class="services-item">
+						<div class="services-photo" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/service-6.jpg)"></div>
+						<div class="services-text">
+							<h3><a href="https://demo.phpscriptpoint.com/acon/service/view/6">HEALTH AND SAFETY</a></h3>
+							Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens 							<div class="services-link">
+								<a href="https://demo.phpscriptpoint.com/acon/service/view/6">Read More <i class="fa fa-angle-double-right"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+						</div>
+	</div>
+</div>
+
+
+<div class="recent-works bg-area ptb-60">
+	<div class="container">
+		<div class="row">
+			<div class="headline">
+				<div class="headline-shadow">
+					<h2>PORTFOLIO</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit Deserunt libero voluptate</p>
+				</div>
+			</div>
+			<div class="recent-menu">
+				<ul>					
+					<li class="hvr-bounce-to-right" data-filter="all">All</li>
+											<li class="hvr-bounce-to-right" data-filter="2">Business</li>
+												<li class="hvr-bounce-to-right" data-filter="1">Corporate</li>
+												<li class="hvr-bounce-to-right" data-filter="3">Engineering</li>
+										</ul>
+			</div>
+			<div class="filtr-container">			
+
+									<div class="col-md-4 col-sm-6 col-xs-12 filtr-item clear-three" data-category="1" data-sort="value">
+						<div class="recent-item">
+							<div class="lightbox-item">
+								<div class="recent-photo" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/portfolio-1.jpg)">
+									<div class="lightbox-bg"></div>
+									<div class="lightbox-text">
+										<div class="lightbox-table">
+											<div class="lightbox-icon">
+												<a href="https://demo.phpscriptpoint.com/acon/public/uploads/portfolio-1.jpg" data-lightbox="lightbox-item"><i class="fa fa-search-plus"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="recent-text">
+									<h3>Corporate Work 1</h3>
+									Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis.									<div class="services-link">
+										<a href="https://demo.phpscriptpoint.com/acon/portfolio/view/1">Read More <i class="fa fa-angle-double-right"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+										<div class="col-md-4 col-sm-6 col-xs-12 filtr-item clear-three" data-category="2" data-sort="value">
+						<div class="recent-item">
+							<div class="lightbox-item">
+								<div class="recent-photo" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/portfolio-2.jpg)">
+									<div class="lightbox-bg"></div>
+									<div class="lightbox-text">
+										<div class="lightbox-table">
+											<div class="lightbox-icon">
+												<a href="https://demo.phpscriptpoint.com/acon/public/uploads/portfolio-2.jpg" data-lightbox="lightbox-item"><i class="fa fa-search-plus"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="recent-text">
+									<h3>Business Work 1</h3>
+									Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis.									<div class="services-link">
+										<a href="https://demo.phpscriptpoint.com/acon/portfolio/view/2">Read More <i class="fa fa-angle-double-right"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+										<div class="col-md-4 col-sm-6 col-xs-12 filtr-item clear-three" data-category="3" data-sort="value">
+						<div class="recent-item">
+							<div class="lightbox-item">
+								<div class="recent-photo" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/portfolio-3.jpg)">
+									<div class="lightbox-bg"></div>
+									<div class="lightbox-text">
+										<div class="lightbox-table">
+											<div class="lightbox-icon">
+												<a href="https://demo.phpscriptpoint.com/acon/public/uploads/portfolio-3.jpg" data-lightbox="lightbox-item"><i class="fa fa-search-plus"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="recent-text">
+									<h3>Engineering Work 1</h3>
+									Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis.									<div class="services-link">
+										<a href="https://demo.phpscriptpoint.com/acon/portfolio/view/3">Read More <i class="fa fa-angle-double-right"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+										<div class="col-md-4 col-sm-6 col-xs-12 filtr-item clear-three" data-category="2" data-sort="value">
+						<div class="recent-item">
+							<div class="lightbox-item">
+								<div class="recent-photo" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/portfolio-4.jpg)">
+									<div class="lightbox-bg"></div>
+									<div class="lightbox-text">
+										<div class="lightbox-table">
+											<div class="lightbox-icon">
+												<a href="https://demo.phpscriptpoint.com/acon/public/uploads/portfolio-4.jpg" data-lightbox="lightbox-item"><i class="fa fa-search-plus"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="recent-text">
+									<h3>Business Work 2</h3>
+									Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis.									<div class="services-link">
+										<a href="https://demo.phpscriptpoint.com/acon/portfolio/view/4">Read More <i class="fa fa-angle-double-right"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+										<div class="col-md-4 col-sm-6 col-xs-12 filtr-item clear-three" data-category="1" data-sort="value">
+						<div class="recent-item">
+							<div class="lightbox-item">
+								<div class="recent-photo" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/portfolio-5.jpg)">
+									<div class="lightbox-bg"></div>
+									<div class="lightbox-text">
+										<div class="lightbox-table">
+											<div class="lightbox-icon">
+												<a href="https://demo.phpscriptpoint.com/acon/public/uploads/portfolio-5.jpg" data-lightbox="lightbox-item"><i class="fa fa-search-plus"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="recent-text">
+									<h3>Corporate Work 2</h3>
+									Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis.									<div class="services-link">
+										<a href="https://demo.phpscriptpoint.com/acon/portfolio/view/5">Read More <i class="fa fa-angle-double-right"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+										<div class="col-md-4 col-sm-6 col-xs-12 filtr-item clear-three" data-category="3" data-sort="value">
+						<div class="recent-item">
+							<div class="lightbox-item">
+								<div class="recent-photo" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/portfolio-6.jpg)">
+									<div class="lightbox-bg"></div>
+									<div class="lightbox-text">
+										<div class="lightbox-table">
+											<div class="lightbox-icon">
+												<a href="https://demo.phpscriptpoint.com/acon/public/uploads/portfolio-6.jpg" data-lightbox="lightbox-item"><i class="fa fa-search-plus"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="recent-text">
+									<h3>Engineering Work 2</h3>
+									Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis.									<div class="services-link">
+										<a href="https://demo.phpscriptpoint.com/acon/portfolio/view/6">Read More <i class="fa fa-angle-double-right"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="team-area ptb-60">
+	<div class="container">
+		<div class="row">
+			<div class="headline">
+				<div class="headline-shadow">
+					<h2>EXPERIENCED TEAM</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit Deserunt libero voluptate</p>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="team-carousel owl-carousel">
+
+											<div class="team-item">
+							<div class="team-photo" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/team-member-1.jpg)"></div>
+							<div class="team-text">
+								<h4>Robert Smith</h4>
+								<p>Chairman</p>
+							</div>
+							<div class="team-social">
+								<ul>
+																		<li><a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+																		
+																		<li><a href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+									
+																		<li><a href="http://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+									
+																		<li><a href="http://www.youtube.com" target="_blank"><i class="fa fa-youtube"></i></a></li>
+									
+									
+									
+																	</ul>
+							</div>
+						</div>
+												<div class="team-item">
+							<div class="team-photo" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/team-member-2.jpg)"></div>
+							<div class="team-text">
+								<h4>Brent Grundy</h4>
+								<p>Manager</p>
+							</div>
+							<div class="team-social">
+								<ul>
+																		<li><a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+																		
+																		<li><a href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+									
+																		<li><a href="http://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+									
+																		<li><a href="http://www.youtube.com" target="_blank"><i class="fa fa-youtube"></i></a></li>
+									
+									
+									
+																	</ul>
+							</div>
+						</div>
+												<div class="team-item">
+							<div class="team-photo" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/team-member-3.jpg)"></div>
+							<div class="team-text">
+								<h4>John Henderson</h4>
+								<p>Engineer</p>
+							</div>
+							<div class="team-social">
+								<ul>
+																		<li><a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+																		
+																		<li><a href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+									
+																		<li><a href="http://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+									
+																		<li><a href="http://www.youtube.com" target="_blank"><i class="fa fa-youtube"></i></a></li>
+									
+									
+									
+																	</ul>
+							</div>
+						</div>
+												<div class="team-item">
+							<div class="team-photo" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/team-member-4.jpg)"></div>
+							<div class="team-text">
+								<h4>Patrick Joe</h4>
+								<p>Engineer</p>
+							</div>
+							<div class="team-social">
+								<ul>
+																		<li><a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+																		
+																		<li><a href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+									
+																		<li><a href="http://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+									
+																		<li><a href="http://www.youtube.com" target="_blank"><i class="fa fa-youtube"></i></a></li>
+									
+									
+									
+																	</ul>
+							</div>
+						</div>
+												<div class="team-item">
+							<div class="team-photo" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/team-member-5.jpg)"></div>
+							<div class="team-text">
+								<h4>Peter Robertson</h4>
+								<p>Worker</p>
+							</div>
+							<div class="team-social">
+								<ul>
+																		<li><a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+																		
+																		<li><a href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+									
+																		<li><a href="http://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+									
+																		<li><a href="http://www.youtube.com" target="_blank"><i class="fa fa-youtube"></i></a></li>
+									
+									
+									
+																	</ul>
+							</div>
+						</div>
+										</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="testimonial-area ptb-60" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/testimonial-main-photo.jpg)">
+	<div class="bg-testimonial"></div>
+	<div class="container">
+		<div class="row">
+			<div class="testimonial-headline">
+				<h2>WHAT OUR CLIENTS SAY</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit Deserunt libero voluptate</p>
+			</div>
+			<div class="col-md-12">
+				<div class="testimonial-carousel owl-carousel">
+			
+											<div class="testimonial-item">
+							<div class="testimonial-text">
+								<div class="client-name">
+									<h4>John Doe</h4>
+									<span>Managing Director, ABC Inc.</span>
+								</div>
+								<div class="testimonial-detail">
+								<i class="fa fa-quote-left"></i>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quo illo corporis nemo consectetur nobis maxime porro obcaecati accusamus, veniam impedit. Soluta esse dolorem saepe architecto similique odit quae ut.</p>
+								</div>
+							</div>
+							<div class="testimonial-photo">
+								<img src="https://demo.phpscriptpoint.com/acon/public/uploads/testimonial-1.jpg">
+							</div>
+						</div>
+												<div class="testimonial-item">
+							<div class="testimonial-text">
+								<div class="client-name">
+									<h4>Dadiv Smith</h4>
+									<span>CEO, SS Multimedia</span>
+								</div>
+								<div class="testimonial-detail">
+								<i class="fa fa-quote-left"></i>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quo illo corporis nemo consectetur nobis maxime porro obcaecati accusamus, veniam impedit. Soluta esse dolorem saepe architecto similique odit quae ut.</p>
+								</div>
+							</div>
+							<div class="testimonial-photo">
+								<img src="https://demo.phpscriptpoint.com/acon/public/uploads/testimonial-2.jpg">
+							</div>
+						</div>
+												<div class="testimonial-item">
+							<div class="testimonial-text">
+								<div class="client-name">
+									<h4>Stefen Carman</h4>
+									<span>Chairman, GH Group</span>
+								</div>
+								<div class="testimonial-detail">
+								<i class="fa fa-quote-left"></i>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quo illo corporis nemo consectetur nobis maxime porro obcaecati accusamus, veniam impedit. Soluta esse dolorem saepe architecto similique odit quae ut.</p>
+								</div>
+							</div>
+							<div class="testimonial-photo">
+								<img src="https://demo.phpscriptpoint.com/acon/public/uploads/testimonial-3.jpg">
+							</div>
+						</div>
+												<div class="testimonial-item">
+							<div class="testimonial-text">
+								<div class="client-name">
+									<h4>Gary Brent</h4>
+									<span>CFO, XYZ It Solution</span>
+								</div>
+								<div class="testimonial-detail">
+								<i class="fa fa-quote-left"></i>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quo illo corporis nemo consectetur nobis maxime porro obcaecati accusamus, veniam impedit. Soluta esse dolorem saepe architecto similique odit quae ut.</p>
+								</div>
+							</div>
+							<div class="testimonial-photo">
+								<img src="https://demo.phpscriptpoint.com/acon/public/uploads/testimonial-4.jpg">
+							</div>
+						</div>
+										</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="faq-home pt-30">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-6">
+				<div class="faq-gallery-main">
+										<img src="https://demo.phpscriptpoint.com/acon/public/uploads/faq-main-photo.png" alt="FAQ Main Photo" class="img-responsive">
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-6">
+				<div class="faq-gallery">
+					<h3>Have Some Questions?</h3>
+					<h4 class="sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit Deserunt libero voluptate</h4>
+					<div class="panel-group" id="accordion">
+													<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#1">Ex vix alienum sadipscing quod melius</a>
+									</h4>
+								</div>
+								<div id="1" class="panel-collapse collapse in">
+									<div class="panel-body">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>									</div>
+								</div>
+							</div>
+														<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#2">Detracto contentiones te est brute ipsum</a>
+									</h4>
+								</div>
+								<div id="2" class="panel-collapse collapse ">
+									<div class="panel-body">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br></p>									</div>
+								</div>
+							</div>
+														<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#3">Vis constituto complectitur an modo</a>
+									</h4>
+								</div>
+								<div id="3" class="panel-collapse collapse ">
+									<div class="panel-body">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br></p>									</div>
+								</div>
+							</div>
+														<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#4">Ancillae interpretaris ea has id amet</a>
+									</h4>
+								</div>
+								<div id="4" class="panel-collapse collapse ">
+									<div class="panel-body">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br></p>									</div>
+								</div>
+							</div>
+														<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#6">Mei ut errem legimus periculis, eos liber</a>
+									</h4>
+								</div>
+								<div id="6" class="panel-collapse collapse ">
+									<div class="panel-body">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br></p>									</div>
+								</div>
+							</div>
+												</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="counterup-area pt-30 pb-60" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/counter_bg.jpg)">
+	<div class="bg-counterup"></div>
+	<div class="container">
+		<div class="row">			
+			<div class="col-md-3 col-sm-6 counter-border">
+				<div class="counter-item">
+					<h2 class="counter">150</h2>
+					<h4>Working Persons</h4>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 counter-border">
+				<div class="counter-item">
+					<h2 class="counter">1200</h2>
+					<h4>Projects Completed</h4>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 counter-border">
+				<div class="counter-item">
+					<h2 class="counter">800</h2>
+					<h4>Happy Clients</h4>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 counter-border">
+				<div class="counter-item">
+					<h2 class="counter">1200</h2>
+					<h4>Awards Achieved</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="caption-photo-area ptb-60">
+	<div class="container">
+		<div class="row">
+			<div class="headline">
+				<div class="headline-shadow">
+					<h2>PHOTO GALLERY</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit Deserunt libero voluptate</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">			
+							<div class="col-md-3 col-sm-4 col-xs-12 clear-four">
+					<div class="caption-item">
+						<div class="caption-photo" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/photo-1.jpg)">
+							<div class="caption-bg"></div>
+							<div class="caption-box">
+								<div class="caption-table">
+									<div class="caption-icon">
+										<a href="https://demo.phpscriptpoint.com/acon/public/uploads/photo-1.jpg" data-lightbox="lightbox-item"><i class="fa fa-search-plus"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="caption-text">
+							<p>Photo Caption 1</p>
+						</div>
+					</div>
+				</div>
+								<div class="col-md-3 col-sm-4 col-xs-12 clear-four">
+					<div class="caption-item">
+						<div class="caption-photo" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/photo-2.jpg)">
+							<div class="caption-bg"></div>
+							<div class="caption-box">
+								<div class="caption-table">
+									<div class="caption-icon">
+										<a href="https://demo.phpscriptpoint.com/acon/public/uploads/photo-2.jpg" data-lightbox="lightbox-item"><i class="fa fa-search-plus"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="caption-text">
+							<p>Photo Caption 2</p>
+						</div>
+					</div>
+				</div>
+								<div class="col-md-3 col-sm-4 col-xs-12 clear-four">
+					<div class="caption-item">
+						<div class="caption-photo" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/photo-3.jpg)">
+							<div class="caption-bg"></div>
+							<div class="caption-box">
+								<div class="caption-table">
+									<div class="caption-icon">
+										<a href="https://demo.phpscriptpoint.com/acon/public/uploads/photo-3.jpg" data-lightbox="lightbox-item"><i class="fa fa-search-plus"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="caption-text">
+							<p>Photo Caption 3</p>
+						</div>
+					</div>
+				</div>
+								<div class="col-md-3 col-sm-4 col-xs-12 clear-four">
+					<div class="caption-item">
+						<div class="caption-photo" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/photo-4.jpg)">
+							<div class="caption-bg"></div>
+							<div class="caption-box">
+								<div class="caption-table">
+									<div class="caption-icon">
+										<a href="https://demo.phpscriptpoint.com/acon/public/uploads/photo-4.jpg" data-lightbox="lightbox-item"><i class="fa fa-search-plus"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="caption-text">
+							<p>Photo Caption 4</p>
+						</div>
+					</div>
+				</div>
+								<div class="col-md-3 col-sm-4 col-xs-12 clear-four">
+					<div class="caption-item">
+						<div class="caption-photo" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/photo-5.jpg)">
+							<div class="caption-bg"></div>
+							<div class="caption-box">
+								<div class="caption-table">
+									<div class="caption-icon">
+										<a href="https://demo.phpscriptpoint.com/acon/public/uploads/photo-5.jpg" data-lightbox="lightbox-item"><i class="fa fa-search-plus"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="caption-text">
+							<p>Photo Caption 5</p>
+						</div>
+					</div>
+				</div>
+								<div class="col-md-3 col-sm-4 col-xs-12 clear-four">
+					<div class="caption-item">
+						<div class="caption-photo" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/photo-6.jpg)">
+							<div class="caption-bg"></div>
+							<div class="caption-box">
+								<div class="caption-table">
+									<div class="caption-icon">
+										<a href="https://demo.phpscriptpoint.com/acon/public/uploads/photo-6.jpg" data-lightbox="lightbox-item"><i class="fa fa-search-plus"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="caption-text">
+							<p>Photo Caption 6</p>
+						</div>
+					</div>
+				</div>
+								<div class="col-md-3 col-sm-4 col-xs-12 clear-four">
+					<div class="caption-item">
+						<div class="caption-photo" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/photo-7.jpg)">
+							<div class="caption-bg"></div>
+							<div class="caption-box">
+								<div class="caption-table">
+									<div class="caption-icon">
+										<a href="https://demo.phpscriptpoint.com/acon/public/uploads/photo-7.jpg" data-lightbox="lightbox-item"><i class="fa fa-search-plus"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="caption-text">
+							<p>Photo Caption 7</p>
+						</div>
+					</div>
+				</div>
+								<div class="col-md-3 col-sm-4 col-xs-12 clear-four">
+					<div class="caption-item">
+						<div class="caption-photo" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/photo-8.jpg)">
+							<div class="caption-bg"></div>
+							<div class="caption-box">
+								<div class="caption-table">
+									<div class="caption-icon">
+										<a href="https://demo.phpscriptpoint.com/acon/public/uploads/photo-8.jpg" data-lightbox="lightbox-item"><i class="fa fa-search-plus"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="caption-text">
+							<p>Photo Caption 8</p>
+						</div>
+					</div>
+				</div>
+						</div>
+	</div>
+</div>
+
+
+<div class="blog-area bg-area ptb-60">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="headline">
+					<div class="headline-shadow">
+						<h2>RECENT POSTS</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit Deserunt libero voluptate</p>
+					</div>
+				</div>
+				<div class="blog-carousel owl-carousel">					
+											<div class="blog-item">
+							<div class="blog-photo" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/news-6.jpg)"></div>
+							<div class="blog-author">
+								<ul>
+									<li class="gro">Posted On: 2018-04-23</li>
+									<li><i class="fa fa-user-circle-o"></i>Admin</li>
+								</ul>
+							</div>
+							<div class="blog-text">
+								<h3><a href="https://demo.phpscriptpoint.com/acon/news/view/6">Ex usu vero quaerendum, mei no falli</a></h3>
+								Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis. Sea ocurreret principes ne. 								<div class="services-link">
+									<a href="https://demo.phpscriptpoint.com/acon/news/view/6">Read More<i class="fa fa-angle-double-right"></i></a>
+								</div>
+							</div>
+						</div>
+												<div class="blog-item">
+							<div class="blog-photo" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/news-5.jpg)"></div>
+							<div class="blog-author">
+								<ul>
+									<li class="gro">Posted On: 2018-04-23</li>
+									<li><i class="fa fa-user-circle-o"></i>Admin</li>
+								</ul>
+							</div>
+							<div class="blog-text">
+								<h3><a href="https://demo.phpscriptpoint.com/acon/news/view/5">Detracto contentiones te est, brute ipsum</a></h3>
+								Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis. Sea ocurreret principes ne. 								<div class="services-link">
+									<a href="https://demo.phpscriptpoint.com/acon/news/view/5">Read More<i class="fa fa-angle-double-right"></i></a>
+								</div>
+							</div>
+						</div>
+												<div class="blog-item">
+							<div class="blog-photo" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/news-4.jpg)"></div>
+							<div class="blog-author">
+								<ul>
+									<li class="gro">Posted On: 2018-04-23</li>
+									<li><i class="fa fa-user-circle-o"></i>Admin</li>
+								</ul>
+							</div>
+							<div class="blog-text">
+								<h3><a href="https://demo.phpscriptpoint.com/acon/news/view/4">Ad qui quem reprimique, quo possit detracto</a></h3>
+								Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis. Sea ocurreret principes ne. 								<div class="services-link">
+									<a href="https://demo.phpscriptpoint.com/acon/news/view/4">Read More<i class="fa fa-angle-double-right"></i></a>
+								</div>
+							</div>
+						</div>
+												<div class="blog-item">
+							<div class="blog-photo" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/news-3.jpg)"></div>
+							<div class="blog-author">
+								<ul>
+									<li class="gro">Posted On: 2018-04-23</li>
+									<li><i class="fa fa-user-circle-o"></i>Admin</li>
+								</ul>
+							</div>
+							<div class="blog-text">
+								<h3><a href="https://demo.phpscriptpoint.com/acon/news/view/3">Pri et oratio iisque atomorum, enim detracto</a></h3>
+								Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis. Sea ocurreret principes ne. 								<div class="services-link">
+									<a href="https://demo.phpscriptpoint.com/acon/news/view/3">Read More<i class="fa fa-angle-double-right"></i></a>
+								</div>
+							</div>
+						</div>
+												<div class="blog-item">
+							<div class="blog-photo" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/news-2.jpg)"></div>
+							<div class="blog-author">
+								<ul>
+									<li class="gro">Posted On: 2018-04-23</li>
+									<li><i class="fa fa-user-circle-o"></i>Admin</li>
+								</ul>
+							</div>
+							<div class="blog-text">
+								<h3><a href="https://demo.phpscriptpoint.com/acon/news/view/2">Tollit cetero cu usu, etiam evertitur id nec</a></h3>
+								Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis. Sea ocurreret principes ne. 								<div class="services-link">
+									<a href="https://demo.phpscriptpoint.com/acon/news/view/2">Read More<i class="fa fa-angle-double-right"></i></a>
+								</div>
+							</div>
+						</div>
+												<div class="blog-item">
+							<div class="blog-photo" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/news-1.jpg)"></div>
+							<div class="blog-author">
+								<ul>
+									<li class="gro">Posted On: 2018-04-23</li>
+									<li><i class="fa fa-user-circle-o"></i>Admin</li>
+								</ul>
+							</div>
+							<div class="blog-text">
+								<h3><a href="https://demo.phpscriptpoint.com/acon/news/view/1">Omnes ornatus qui et, te aeterno discere ocurreret</a></h3>
+								Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis. Sea ocurreret principes ne. 								<div class="services-link">
+									<a href="https://demo.phpscriptpoint.com/acon/news/view/1">Read More<i class="fa fa-angle-double-right"></i></a>
+								</div>
+							</div>
+						</div>
+										</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="brand-area ptb-60">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="headline">
+					<div class="headline-shadow">
+						<h2>OUR PARTNERS</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit Deserunt libero voluptate</p>
+					</div>
+				</div>
+				<div class="brand-carousel owl-carousel">					
+											<div class="brand-item" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/partner-1.png)"></div>
+												<div class="brand-item" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/partner-2.png)"></div>
+												<div class="brand-item" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/partner-3.png)"></div>
+												<div class="brand-item" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/partner-4.png)"></div>
+												<div class="brand-item" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/partner-5.png)"></div>
+												<div class="brand-item" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/partner-6.png)"></div>
+												<div class="brand-item" style="background-image: url(https://demo.phpscriptpoint.com/acon/public/uploads/partner-7.png)"></div>
+										</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer-contact-area">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-sm-4">
+				<div class="footer-contact-item">
+					<ul>
+						<li><img src="https://demo.phpscriptpoint.com/acon/public/uploads/footer_address_icon.png" alt="Icon"></li>
+						<li>
+							<h4>Address</h4>
+							<p>
+								Lane A21, ABC Steet, <br />
+NewYork, USA.							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<div class="footer-contact-item">
+					<ul>
+						<li><img src="https://demo.phpscriptpoint.com/acon/public/uploads/footer_phone_icon.png" alt="Icon"></li>
+						<li>
+							<h4>Call Us</h4>
+							<p>
+								111-222-3333<br />
+111-222-4444							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<div class="footer-contact-item">
+					<ul>
+						<li><img src="https://demo.phpscriptpoint.com/acon/public/uploads/footer_working_hour_icon.png" alt="Icon"></li>
+						<li>
+							<h4>Working Hours</h4>
+							<p>
+								Monday-Friday (9:00 AM - 5:00 PM)<br />
+Saturday and Sunday: Off							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="footer-main">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-md-3 col-lg-3 footer-col wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+				<h3>About Us</h3>
+					<p>
+						Lorem ipsum dolor sit amet, omnis signiferumque in mei, mei ex enim concludaturque. Senserit salutandi euripidis no per, modus maiestatis scribentur est an. Ea suas pertinax has, solet officiis pericula cu pro, possit inermis qui ad. An mea tale perfecto sententiae.					</p>
+			</div>
+			<div class="col-sm-6 col-md-3 col-lg-3 footer-col wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+				<h3>Latest News</h3>
+									<div class="news-item">
+						<div class="news-title"><a href="https://demo.phpscriptpoint.com/acon/news/view/6">Ex usu vero quaerendum, mei no falli</a></div>
+					</div>
+										<div class="news-item">
+						<div class="news-title"><a href="https://demo.phpscriptpoint.com/acon/news/view/5">Detracto contentiones te est, brute ipsum</a></div>
+					</div>
+										<div class="news-item">
+						<div class="news-title"><a href="https://demo.phpscriptpoint.com/acon/news/view/4">Ad qui quem reprimique, quo possit detracto</a></div>
+					</div>
+										<div class="news-item">
+						<div class="news-title"><a href="https://demo.phpscriptpoint.com/acon/news/view/3">Pri et oratio iisque atomorum, enim detracto</a></div>
+					</div>
+								</div>
+			<div class="col-sm-6 col-md-3 col-lg-3 footer-col wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
+				<h3>Popular News</h3>
+									<div class="news-item">
+						<div class="news-title"><a href="https://demo.phpscriptpoint.com/acon/news/view/5">Detracto contentiones te est, brute ipsum</a></div>
+					</div>
+										<div class="news-item">
+						<div class="news-title"><a href="https://demo.phpscriptpoint.com/acon/news/view/6">Ex usu vero quaerendum, mei no falli</a></div>
+					</div>
+										<div class="news-item">
+						<div class="news-title"><a href="https://demo.phpscriptpoint.com/acon/news/view/2">Tollit cetero cu usu, etiam evertitur id nec</a></div>
+					</div>
+										<div class="news-item">
+						<div class="news-title"><a href="https://demo.phpscriptpoint.com/acon/news/view/4">Ad qui quem reprimique, quo possit detracto</a></div>
+					</div>
+								</div>
+			<div class="col-sm-6 col-md-3 col-lg-3 footer-col wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
+				<h3>Quick Links</h3>
+				<div class="news-item">
+					<div class="news-title"><a href="https://demo.phpscriptpoint.com/acon/">Home</a></div>
+				</div>
+				<div class="news-item">
+					<div class="news-title"><a href="https://demo.phpscriptpoint.com/acon/terms-and-conditions">Terms and Conditions</a></div>
+				</div>
+				<div class="news-item">
+					<div class="news-title"><a href="https://demo.phpscriptpoint.com/acon/privacy-policy">Privacy Policy</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="footer-copyrignt">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="copyright-text">
+					<p>Copyright 2023. All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="scroll-top" style="display: block;">
+	<i class="fa fa-angle-up"></i>
+</div>
+
+<script src='https://demo.phpscriptpoint.com/acon/public/js/jquery-2.2.4.min.js'></script>
+<script src='https://demo.phpscriptpoint.com/acon/public/js/bootstrap.min.js'></script>
+<script src='https://demo.phpscriptpoint.com/acon/public/js/bootstrap-datepicker.js'></script>
+<script src='https://demo.phpscriptpoint.com/acon/public/js/lightbox.min.js'></script>
+<script src='https://demo.phpscriptpoint.com/acon/public/js/owl.carousel.min.js'></script>
+<script src='https://demo.phpscriptpoint.com/acon/public/js/jquery.meanmenu.js'></script>
+<script src='https://demo.phpscriptpoint.com/acon/public/js/jquery.filterizr.min.js'></script>
+<script src='https://demo.phpscriptpoint.com/acon/public/js/waypoints.min.js'></script>
+<script src='https://demo.phpscriptpoint.com/acon/public/js/jquery.counterup.min.js'></script>
+<script src='https://demo.phpscriptpoint.com/acon/public/js/custom.js'></script>
+
+
 <script type="text/javascript">
-    (function() {
-        emailjs.init("18ygGgryRoGve-Tpw"); // معرف المستخدم
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/5a7c31ded7591465c7077c48/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
     })();
-</script>
-
-<script src="scripts/main.js" defer></script>
-</body>
+</script></body>
 </html>
 
 
