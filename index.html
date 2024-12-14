@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alazzab Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Alazzab Store</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#daftra-store">Daftra Store</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="hero">
+                <h2>Welcome to Alazzab Store</h2>
+                <p>Discover top-quality products at unbeatable prices.</p>
+                <div class="featured-products">
+                    <h3>Featured Products</h3>
+                    <div class="product-list">
+                        <div class="product">
+                            <img src="featured1.jpg" alt="Featured Product 1">
+                            <h3>Featured Product 1</h3>
+                            <p>$120</p>
+                            <button class="btn">Add to Cart</button>
+                        </div>
+                        <div class="product">
+                            <img src="featured2.jpg" alt="Featured Product 2">
+                            <h3>Featured Product 2</h3>
+                            <p>$95</p>
+                            <button class="btn">Add to Cart</button>
+                        </div>
+                        <div class="product">
+                            <img src="featured3.jpg" alt="Featured Product 3">
+                            <h3>Featured Product 3</h3>
+                            <p>$150</p>
+                            <button class="btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <a href="#products" class="btn">Shop All Products</a>
+            </div>
+        </section>
+
+        <section id="products" class="products">
+            <h2>Our Products</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="product1.jpg" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>$50</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="product2.jpg" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>$75</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="product3.jpg" alt="Product 3">
+                    <h3>Product 3</h3>
+                    <p>$100</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="daftra-store">
+            <h2>Alazzab Store on Daftra</h2>
+            <iframe src="https://alazab-co.daftra.com/store" width="100%" height="800" style="border:none;"></iframe>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Alazzab Store. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
