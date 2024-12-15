@@ -1,63 +1,78 @@
-// تعريف العناصر من الـ DOM
-const contactForm = document.getElementById("contact-form");
+// عند تحميل الصفحة، عرض العناصر بالتأخير
+window.onload = () => {
+  setTimeout(() => {
+    document.querySelector("body").classList.add("display");
+  }, 2000);
+};
 
-// إضافة حدث إرسال النموذج
-contactForm.addEventListener("submit", (event) => {
-    event.preventDefault(); // منع إعادة تحميل الصفحة
+// تأثير التمرير (ظهور العناصر أثناء التمرير)
+window.addEventListener("scroll", () => {
+  const services = document.querySelectorAll(".service");
+  const triggerBottom = window.innerHeight * 0.8;
 
-    // الحصول على بيانات المدخلات
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
+  services.forEach(service => {
+    const serviceTop = service.getBoundingClientRect().top;
 
-    // التأكد من أن الحقول ليست فارغة
-    if (name && email && message) {
-        alert(`Thank you, ${name}! Your message has been sent.`);
-        // يمكنك إرسال البيانات إلى الخادم هنا إذا لزم الأمر
-        contactForm.reset(); // إعادة تعيين النموذج
+    if (serviceTop < triggerBottom) {
+      service.classList.add("show");
     } else {
-        alert("Please fill in all fields.");
+      service.classList.remove("show");
     }
+  });
 });
-// تسجيل الـ Service Worker
-if ("serviceWorker" in navigator) {
-    window.addEventListener("load", () => {
-        navigator.serviceWorker.register("/service-worker.js").then(
-            (registration) => {
-                console.log("Service Worker registered:", registration);
-            },
-            (err) => {
-                console.log("Service Worker registration failed:", err);
-            }
-        );
+
+// القائمة الجانبية (فتح وإغلاق)
+document.querySelector(".hamburger-menu").addEventListener("click", () => {
+  document.querySelector(".container").classList.toggle("change");
+});
+
+// تأثير التمرير السلس
+document.querySelector(".scroll-btn").addEventListener("click", () => {
+  document.querySelector("html").style.scrollBehavior = "smooth";
+  setTimeout(() => {
+    document.querySelector("html").style.scrollBehavior = "unset";
+  }, 1000);
+});
+
+// عرض نافذة منبثقة عند النقر على الخدمة
+document.querySelectorAll(".service").forEach(service => {
+  service.addEventListener("click", () => {
+    const popupId = `popup-${service.dataset.service}`;
+    document.getElementById(popupId).classList.add("active");
+  });
+});
+
+// إغلاق النافذة المنبثقة
+document.querySelectorAll(".close-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    btn.parentElement.parentElement.classList.remove("active");
+  });
+});
+
+// عداد زمني لتعداد المشاريع
+let started = false;
+
+window.addEventListener("scroll", () => {
+  const serviceSection = document.querySelector(".services");
+  const triggerBottom = window.innerHeight * 0.8;
+
+  if (serviceSection.getBoundingClientRect().top < triggerBottom && !started) {
+    started = true;
+    document.querySelectorAll(".counter").forEach(counter => {
+      const updateCount = () => {
+        const target = +counter.getAttribute("data-target");
+        const count = +counter.innerText;
+        const increment = target / 200;
+
+        if (count < target) {
+          counter.innerText = Math.ceil(count + increment);
+          setTimeout(updateCount, 10);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCount();
     });
-}
-// تعريف العناصر من الـ DOM
-const contactForm = document.getElementById("contact-form");
-
-contactForm.addEventListener("submit", (event) => {
-    event.preventDefault(); // منع إعادة تحميل الصفحة
-
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
-
-    if (name && email && message) {
-        // استدعاء EmailJS لإرسال البريد
-        emailjs.send("service_Alazab.co", "template_hbb46pi", {
-            from_name: name,
-            from_email: email,
-            message: message,
-        })
-        .then(() => {
-            alert("Message sent successfully!");
-            contactForm.reset(); // إعادة تعيين النموذج
-        })
-        .catch((error) => {
-            console.error("Error sending message:", error);
-            alert("Failed to send message. Please try again later.");
-        });
-    } else {
-        alert("Please fill in all fields.");
-    }
+  }
 });
+
